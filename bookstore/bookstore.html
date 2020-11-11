@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop Online</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 20%;
+            padding-top: 3%;
+
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 3%;
+        }
+
+
+
+    </style>
+    <title>Shop Online</title>
+</head>
+<body>
+
+<!-- Page content -->
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="../about/about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+        <a href="bookstore.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOP ONLINE</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CART</a>
+        <a href="../register/register.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JOIN US</a>
+        <a href="../login/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+
+        <div class="search-container" style="float: right;">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar on small screens  -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="../about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+    <a href="bookstore.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOP ONLINE</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CART</a>
+    <a href="../register/register.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JOIN US</a>
+    <a href="../login/login.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOGIN</a>
+</div>
+
+<!-- Header -->
+
+<div style="text-align:center;  ">
+    <h2 style="padding-top: 5%; ">Shop Online!</h2>
+    <p>Click on the categories below:</p>
+</div>
+
+<!-- The six catergories -->
+<div style=" padding-left: 10%;" class="w3-row">
+    <div class="w3-third ">
+        <a href="biography.html">
+        <img src="img/headers/biography.png" alt="Biography Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+
+    <div class="w3-third ">
+        <a href="children.html">
+        <img src="img/headers/children.png" alt="Children Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+
+    <div class="w3-third ">
+        <a href="self.html">
+            <img src="img/headers/self.png" alt="Children Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+</div>
+
+
+<div style="padding-left: 10%; padding-top: 2%" class="w3-row">
+    <div class="w3-third ">
+        <a href="programming.html">
+            <img src="img/headers/programming.png" alt="Biography Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+
+    <div class="w3-third ">
+        <a href="arts.html">
+            <img src="img/headers/arts.png" alt="Children Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+
+    <div class="w3-third ">
+        <a href="wellbeing.html">
+            <img src="img/headers/wellbeing.png" alt="Children Books" style="width:80%" onclick="myFunction(this);">
+        </a>
+    </div>
+</div>
+
+<!-- The Contact Section -->
+<div class=" w3-content w3-padding-64 w3" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>More info!</i></p>
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i>
+            IsAThing Bookstore, 6 Nowhere Road,<br>
+            #02-1234, Singapore 093123 <br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +65 6123 4567 / <br>+65 9000 1111<br>
+            <i class="fa fa-envelope" style="width:30px"> </i>  <a href = "mailto:Email: mail@isathing.com">mail@isathing.com</a><br>
+        </div>
+        <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button  class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+
+
+</body>
+
+
+</html>
